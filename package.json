@@ -1,0 +1,26 @@
+{
+  "name": "hexlet-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kelevra-pro/hexlet-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kelevra-pro/hexlet-backend/issues"
+  },
+  "homepage": "https://github.com/Kelevra-pro/hexlet-backend#readme",
+  "devDependencies": {
+    "jest": "29.3.1"
+  },
+  "dependencies": {
+    "axios": "1.2.1"
+  }
+}
