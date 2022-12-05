@@ -22,13 +22,6 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
 
-      - name: Run Snyk to check for vulnerabilities
-        uses: snyk/actions/node@master
-        env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-          with:
-          args: --severity.threshold --fail-on=upgradable
-
       - name: Install
         run: make install
 
