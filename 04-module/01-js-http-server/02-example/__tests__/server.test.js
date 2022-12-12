@@ -7,6 +7,10 @@ const port = 9000;
 const url = `${hostname}:${port}`;
 
 describe('Phonebook', () => {
+  beforeAll(done => {
+    done();
+  });
+
   it('GET /', () => (
     new Promise((resolve, reject) => {
       server(port, async () => {
