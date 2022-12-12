@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-import {server} from '../server.js';
+import { server } from '../server.js';
 
 const hostname = 'http://localhost';
 const port = 9000;
@@ -16,6 +16,8 @@ describe('Phonebook', () => {
           resolve();
         } catch (e) {
           reject(e);
+        } finally {
+          done();
         }
       });
     })
