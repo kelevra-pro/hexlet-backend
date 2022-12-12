@@ -1,19 +1,13 @@
 import axios from 'axios';
 import { server } from '../server.js';
 
+jest.useFakeTimers();
+
 const hostname = 'http://localhost';
 const port = 9000;
 const url = `${hostname}:${port}`;
 
 describe('Phonebook', () => {
-  beforeAll(done => {
-    done();
-  });
-
-  afterAll(done => {
-    done();
-  });
-
   test('GET /', () => {
     new Promise((resolve, reject) => {
       server(port, async () => {
