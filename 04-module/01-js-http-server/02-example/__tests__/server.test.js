@@ -1,5 +1,4 @@
 import axios from 'axios';
-
 import { server } from '../server.js';
 
 const hostname = 'http://localhost';
@@ -8,6 +7,10 @@ const url = `${hostname}:${port}`;
 
 describe('Phonebook', () => {
   beforeAll(done => {
+    done();
+  });
+
+  afterAll(done => {
     done();
   });
 
