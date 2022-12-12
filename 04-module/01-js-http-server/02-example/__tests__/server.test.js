@@ -14,7 +14,7 @@ describe('Phonebook', () => {
     done();
   });
 
-  it('GET /', () => (
+  test('GET /', () => {
     new Promise((resolve, reject) => {
       server(port, async () => {
         try {
@@ -23,10 +23,8 @@ describe('Phonebook', () => {
           resolve();
         } catch (e) {
           reject(e);
-        } finally {
-          done();
         }
       });
-    })
-  ));
+    });
+  });
 });
