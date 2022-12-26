@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { server } from '../server.js';
+import {jest} from '@jest/globals'
 
 jest.useFakeTimers();
 
