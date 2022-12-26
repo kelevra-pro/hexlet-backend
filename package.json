@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "jest --colors"
+    "test": "jest --colors --detectOpenHandles --forceExit"
   },
   "repository": {
     "type": "git",

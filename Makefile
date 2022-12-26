@@ -2,4 +2,4 @@ install:
 	npm install
 
 test:
-	@ npm test -s
+	npm test -s
